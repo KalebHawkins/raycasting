@@ -73,8 +73,6 @@ func (g *Game) Render3DProjectedWalls(dst *ebiten.Image) {
 
 		wallStripHeight := (TileSize / rayDistance) * distanceProjectionPlane
 
-		// Clamp and scale the alpha value
-		// Define min and max render distance to avoid too dark or too bright walls
 		const minDistance = 1.0
 		const maxDistance = MapColumns * MapRows * 2 // tweak this for your map/scale
 
